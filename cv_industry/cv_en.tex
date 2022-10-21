@@ -1,0 +1,53 @@
+\documentclass[11pt]{moderncv}
+
+\moderncvtheme[orange]{classic}
+% 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans
+% serif fonts)
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[a4paper,scale=0.8,margin=0.6in]{geometry}
+
+\usepackage[
+		bibstyle=authortitle,
+		dashed=false,
+		sorting=none,
+		defernumbers=true,
+		backend=bibtexu,
+		maxnames=8,
+		minnames=4
+	]{biblatex}
+
+\DeclareNameAlias{sortname}{first-last}
+\DeclareNameAlias{default}{first-last}
+\addbibresource{../references/publications.bib}
+
+% Personal data
+\input{../sources/en/personal_full.tex}
+
+
+\nopagenumbers{}
+\hyphenation{Mention distributed systems computer embedded}
+
+\begin{document}
+\maketitle
+
+% Experience
+\input{../sources/en/experience_full.tex}
+
+% Education
+\input{../sources/en/education_full.tex}
+
+% Computer skills
+\input{../sources/en/computer_skills.tex}
+
+% References
+\input{../sources/en/references_short.tex}
+
+% Languages
+\input{../sources/en/languages.tex}
+
+% Interests
+\input{../sources/en/interests.tex}
+\end{document}

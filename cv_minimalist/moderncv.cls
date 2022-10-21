@@ -1,0 +1,1 @@
+../references/moderncv.cls
